@@ -1,11 +1,9 @@
-/*
-ABCDE
-BCDEF
-CDEFG
-DEFGH
-EFGHI
-*/
 
+/*
+A
+BB
+CCC
+*/
 #include <iostream>
 using namespace std;
 
@@ -17,10 +15,10 @@ int main()
     int row = 1;
     while(row<=n){
         int col = 1;
-        while(col<=n){
-            char ch = 'A'+row+col-2;
+        while(col <= row){
+            char ch = 'A'+row-1;
             cout<<ch;
-            col = col+1;
+            col=col+1;
         }
         cout<<endl;
         row=row+1;
